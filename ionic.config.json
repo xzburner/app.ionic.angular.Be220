@@ -1,0 +1,7 @@
+{
+  "name": "ionic.angular.be220-app",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

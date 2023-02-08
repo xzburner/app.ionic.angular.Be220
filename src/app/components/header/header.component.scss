@@ -1,0 +1,140 @@
+.header {
+  background-color: #363434;
+  height: var(--header-height);
+  color: white;
+  padding: calc(1rem + var(--ion-safe-area-top)) 1rem 1rem;
+  border-radius: 0 0 2.8rem 2.8rem;
+  box-shadow: var(--primary-box-shadow);
+
+  &--actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.5rem;
+
+    &--menu {
+      ion-menu-button {
+        color: #FFFFFF;
+        font-size: 2rem;
+      }
+    }
+
+    &--logo {
+      ion-img {
+        width: 7rem;
+      }
+    }
+
+    &--notifications {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0.5rem;
+      font-size: 1.2rem;
+      color: #d7593c;
+      background-color: #000000;
+      border-radius: 50%;
+      box-shadow: 0rem 0.2rem 0.2rem #151414;
+      cursor: pointer;
+
+      &--circle {
+        display: flex;
+        justify-content: right;
+        align-items: end;
+        margin-bottom: 1.5rem;
+        margin-left: 1.5rem;
+        position: absolute;
+        background-color: #13abab;
+        border-radius: 50%;
+        font-size: 0.8rem;
+      }
+    }
+  }
+
+  &--container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &--informations {
+      display: flex;
+      align-items: center;
+      justify-content: left;
+      margin-left: 1.8rem;
+
+      &--info {
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+        margin-right: 1.2rem;
+
+        &--name {
+          text-align: start;
+          font-size: 1.2rem;
+          width: 15rem;
+          font-weight: bold;
+          text-transform: capitalize;
+          overflow: hidden;
+          white-space: nowrap;
+          margin-left: 0.8rem;
+          text-overflow: ellipsis;
+        }
+
+        &--level {
+          text-align: start;
+          font-size: 0.9rem;
+          width: 15rem;
+          font-weight: 600;
+          color: #705cb7;
+          text-transform: capitalize;
+          overflow: hidden;
+          white-space: nowrap;
+          margin-left: 0.8rem;
+          text-overflow: ellipsis;
+        }
+      }
+
+      &--avatar {
+        width: 5rem;
+        height: 5rem;
+        border-radius: 50%;
+        overflow: hidden;
+        box-shadow: 0px 0px 1rem 0px rgba(0, 0, 0, 0.75);
+      }
+    }
+  }
+
+  &--card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+    height: 3rem;
+    border-radius: 10rem;
+    background-color: #1c1b1b;
+    box-shadow: 0px 0px 1rem 0px rgba(19, 18, 18, 0.75);
+
+    &--actions {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &--buttons {
+        font-family: 'Oswald', sans-serif;
+        font-size: 0.8rem;
+        color: #ce4f2e;
+        letter-spacing: 0rem;
+      }
+
+      &--icons {
+        color: #ce4f2e;
+        padding: 0.4rem;
+        border: 0.1rem solid #ce4f2e;
+        border-radius: 50%;
+      }
+    }
+
+  }
+}

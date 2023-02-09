@@ -1,0 +1,60 @@
+.home {
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: 35rem;
+  //alterar
+
+  &--title {
+    margin-top: 1rem;
+    margin-left: 2rem;
+    font-size: 1.5rem;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    position: static;
+
+    &--icon {
+      margin-left: 1rem;
+      font-size: 1.5rem;
+      color: #ce4f2e;
+    }
+  }
+
+  &--card {
+    padding-left: 1rem;
+    display: flex;
+    width: 100%;
+    overflow-x: auto;
+    cursor: pointer;
+    position: relative;
+
+    ion-card {
+      border-radius: 1rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-width: 12rem;
+    }
+
+    &--image {
+      opacity: 0.8;
+    }
+
+    &--icon {
+      position: absolute;
+      color: #FFFFFF;
+      font-size: 3rem;
+      margin-right: 3rem;
+    }
+
+    &--text {
+      position: absolute;
+      color: #FFFFFF;
+      margin-left: 3rem;
+    }
+  }
+  ::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+

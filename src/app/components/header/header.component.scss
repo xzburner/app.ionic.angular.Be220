@@ -1,8 +1,7 @@
 .header {
   background-color: #363434;
-  height: var(--header-height);
   color: white;
-  padding: calc(1rem + var(--ion-safe-area-top)) 1rem 1rem;
+  padding: calc(0.8rem + var(--ion-safe-area-top)) 0.4rem 0.4rem;
   border-radius: 0 0 2.8rem 2.8rem;
   box-shadow: var(--primary-box-shadow);
 
@@ -109,8 +108,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: auto;
-    width: 100%;
+    margin: 0.5rem;
     height: 3rem;
     border-radius: 10rem;
     background-color: #1c1b1b;

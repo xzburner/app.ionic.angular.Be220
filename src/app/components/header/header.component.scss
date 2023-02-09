@@ -11,9 +11,9 @@
     margin: 0.5rem;
 
     &--menu {
-      ion-menu-button {
+      ion-icon {
         color: #FFFFFF;
-        font-size: 2rem;
+        font-size: 2.2rem;
       }
     }
 
@@ -30,7 +30,7 @@
       align-items: center;
       padding: 0.5rem;
       font-size: 1.2rem;
-      color: #d7593c;
+      color: var(--color-orange);;
       background-color: #000000;
       border-radius: 50%;
       box-shadow: 0rem 0.2rem 0.2rem #151414;
@@ -63,9 +63,9 @@
 
       &--info {
         display: flex;
-        align-items: flex-end;
         flex-direction: column;
-        margin-right: 1.2rem;
+        margin-left: 0.6rem;
+        text-transform: uppercase;
 
         &--name {
           text-align: start;
@@ -75,25 +75,12 @@
           text-transform: capitalize;
           overflow: hidden;
           white-space: nowrap;
-          margin-left: 0.8rem;
-          text-overflow: ellipsis;
-        }
-
-        &--level {
-          text-align: start;
-          font-size: 0.9rem;
-          width: 15rem;
-          font-weight: 600;
-          color: #705cb7;
-          text-transform: capitalize;
-          overflow: hidden;
-          white-space: nowrap;
-          margin-left: 0.8rem;
           text-overflow: ellipsis;
         }
       }
 
       &--avatar {
+        cursor: pointer;
         width: 4rem;
         height: 4rem;
         border-radius: 50%;
@@ -121,17 +108,31 @@
       &--buttons {
         font-family: 'Oswald', sans-serif;
         font-size: 0.8rem;
-        color: #ce4f2e;
+        color: var(--color-orange);
         letter-spacing: 0rem;
       }
 
       &--icons {
-        color: #ce4f2e;
+        color: var(--color-orange);
         padding: 0.4rem;
-        border: 0.1rem solid #ce4f2e;
+        border: 0.1rem solid var(--color-orange);;
         border-radius: 50%;
       }
     }
 
   }
 }
+
+.purple {
+  color: var(--color-purple);
+}
+
+.yellow {
+  color: var(--color-yellow);
+}
+
+.white {
+  color: var(--color-white);
+}
+
+

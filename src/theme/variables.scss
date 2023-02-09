@@ -77,6 +77,10 @@
 
   /** Project Variables */
   --header-height: calc(10rem + var(--ion-safe-area-top));
+  --color-yellow: #f8f800;
+  --color-orange: #ce4f2e;
+  --color-purple: #8a41c7;
+  --color-white: #FFFFFF;
 }
 
 @media (prefers-color-scheme: dark) {

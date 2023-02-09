@@ -1,8 +1,7 @@
 .home {
   overflow-x: hidden;
   overflow-y: auto;
-  height: 35rem;
-  //alterar
+  height: calc(88vh - var(--header-height));
 
   &--title {
     margin-top: 1rem;

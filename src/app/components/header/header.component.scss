@@ -1,9 +1,8 @@
 .header {
   background-color: #363434;
   color: white;
-  padding: calc(0.8rem + var(--ion-safe-area-top)) 0.4rem 0.4rem;
+  padding: calc(0.4rem + var(--ion-safe-area-top)) 0.4rem 0.4rem;
   border-radius: 0 0 2.8rem 2.8rem;
-  box-shadow: var(--primary-box-shadow);
 
   &--actions {
     display: flex;
@@ -95,8 +94,8 @@
       }
 
       &--avatar {
-        width: 5rem;
-        height: 5rem;
+        width: 4rem;
+        height: 4rem;
         border-radius: 50%;
         overflow: hidden;
         box-shadow: 0px 0px 1rem 0px rgba(0, 0, 0, 0.75);
@@ -109,7 +108,7 @@
     justify-content: center;
     align-items: center;
     margin: 0.5rem;
-    height: 3rem;
+    height: 2.5rem;
     border-radius: 10rem;
     background-color: #1c1b1b;
     box-shadow: 0px 0px 1rem 0px rgba(19, 18, 18, 0.75);

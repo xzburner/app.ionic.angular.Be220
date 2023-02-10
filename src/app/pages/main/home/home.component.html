@@ -1,139 +1,63 @@
 <div class="home">
   <div class="home--title">
     <span>personal online</span>
-    <ion-icon class="home--title--icon" name="add-circle-outline"></ion-icon>
+    <ion-icon (click)="onDevelopment()" class="home--title--icon" name="add-circle-outline"></ion-icon>
   </div>
 
   <div class="home--card">
     <ion-card>
       <div class="home--card--image">
-        <ion-img src="assets/cards/levantamento-de-peso.jpg"></ion-img>
+        <ion-img (click)="onDevelopment()" src="assets/cards/levantamento-de-peso.jpg"></ion-img>
       </div>
       <div class="home--card--icon">
-        <ion-icon class="" name="add-circle-outline"></ion-icon>
+        <ion-icon (click)="onDevelopment()" name="add-circle-outline"></ion-icon>
       </div>
       <div class="home--card--text">
-        <span>NOVO <br>TREINO</span>
+        <span (click)="onDevelopment()">NOVO <br>TREINO</span>
       </div>
     </ion-card>
 
-
-    <ion-card>
+    <ion-card *ngFor="let personal of personalData" (click)="onDevelopment()">
       <div class="home--card--image">
-        <ion-img src="assets/cards/levantamento-de-peso.jpg"></ion-img>
+        <ion-img src="{{personal.img}}"></ion-img>
       </div>
-      <div class="home--card--icon">
-        <ion-icon class="" name="add-circle-outline"></ion-icon>
-      </div>
-      <div class="home--card--text">
-        <span>NOVO <br>TREINO</span>
-      </div>
-    </ion-card>
-
-
-    <ion-card>
-      <div class="home--card--image">
-        <ion-img src="assets/cards/levantamento-de-peso.jpg"></ion-img>
-      </div>
-      <div class="home--card--icon">
-        <ion-icon class="" name="add-circle-outline"></ion-icon>
-      </div>
-      <div class="home--card--text">
-        <span>NOVO <br>TREINO</span>
+      <div class="home--card--text-card">
+        <span>{{personal.description}}</span>
       </div>
     </ion-card>
   </div>
 
   <div class="home--title">
-    <span>pesronal online</span>
-    <ion-icon class="home--title--icon" name="add-circle-outline"></ion-icon>
+    <span>programas</span>
+    <span class="home--title--new">novo</span>
   </div>
 
-  <div class="home--card">
-    <ion-card>
+  <div class="home--card" (click)="onDevelopment()">
+    <ion-card *ngFor="let program of programData">
       <div class="home--card--image">
-        <ion-img src="assets/cards/levantamento-de-peso.jpg"></ion-img>
+        <ion-img src="{{program.img}}"></ion-img>
       </div>
-      <div class="home--card--icon">
-        <ion-icon class="" name="add-circle-outline"></ion-icon>
-      </div>
-      <div class="home--card--text">
-        <span>NOVO <br>TREINO</span>
-      </div>
-    </ion-card>
-
-
-    <ion-card>
-      <div class="home--card--image">
-        <ion-img src="assets/cards/levantamento-de-peso.jpg"></ion-img>
-      </div>
-      <div class="home--card--icon">
-        <ion-icon class="" name="add-circle-outline"></ion-icon>
-      </div>
-      <div class="home--card--text">
-        <span>NOVO <br>TREINO</span>
-      </div>
-    </ion-card>
-
-
-    <ion-card>
-      <div class="home--card--image">
-        <ion-img src="assets/cards/levantamento-de-peso.jpg"></ion-img>
-      </div>
-      <div class="home--card--icon">
-        <ion-icon class="" name="add-circle-outline"></ion-icon>
-      </div>
-      <div class="home--card--text">
-        <span>NOVO <br>TREINO</span>
+      <div class="home--card--text-card">
+        <span *ngIf="program.startedTraining" class="home--card--text-card--continue">continuar treinando</span>
+        <span>{{program.description}}</span>
       </div>
     </ion-card>
   </div>
+
 
   <div class="home--title">
-    <span>pesronal online</span>
-    <ion-icon class="home--title--icon" name="add-circle-outline"></ion-icon>
+    <span>conteúdos</span>
   </div>
 
-  <div class="home--card">
-    <ion-card>
+  <div class="home--card" (click)="onDevelopment()">
+    <ion-card *ngFor="let content of contentData">
       <div class="home--card--image">
-        <ion-img src="assets/cards/levantamento-de-peso.jpg"></ion-img>
+        <ion-img src="{{content.img}}"></ion-img>
       </div>
-      <div class="home--card--icon">
-        <ion-icon class="" name="add-circle-outline"></ion-icon>
-      </div>
-      <div class="home--card--text">
-        <span>NOVO <br>TREINO</span>
-      </div>
-    </ion-card>
-
-
-    <ion-card>
-      <div class="home--card--image">
-        <ion-img src="assets/cards/levantamento-de-peso.jpg"></ion-img>
-      </div>
-      <div class="home--card--icon">
-        <ion-icon class="" name="add-circle-outline"></ion-icon>
-      </div>
-      <div class="home--card--text">
-        <span>NOVO <br>TREINO</span>
-      </div>
-    </ion-card>
-
-
-    <ion-card>
-      <div class="home--card--image">
-        <ion-img src="assets/cards/levantamento-de-peso.jpg"></ion-img>
-      </div>
-      <div class="home--card--icon">
-        <ion-icon class="" name="add-circle-outline"></ion-icon>
-      </div>
-      <div class="home--card--text">
-        <span>NOVO <br>TREINO</span>
+      <div class="home--card--text-card">
+        <span>{{content.description}}</span>
       </div>
     </ion-card>
   </div>
-
-
 
 </div>

@@ -14,6 +14,7 @@
       ion-icon {
         color: #FFFFFF;
         font-size: 2.2rem;
+        cursor: pointer;
       }
     }
 
@@ -65,17 +66,14 @@
         display: flex;
         flex-direction: column;
         margin-left: 0.6rem;
+        font-size: 0.8rem;
         text-transform: uppercase;
 
         &--name {
-          text-align: start;
           font-size: 1.2rem;
-          width: 15rem;
           font-weight: bold;
-          text-transform: capitalize;
-          overflow: hidden;
-          white-space: nowrap;
-          text-overflow: ellipsis;
+          position: static;
+          color: var(--color-white);
         }
       }
 

@@ -21,7 +21,7 @@ export class HeaderComponent implements OnInit {
 
   public handlerMessage: string = '';
   public roleMessage: string = '';
-  public user?: UserProxy = new UserProxy('Junio Souza', 'roxo');
+  public user: UserProxy = new UserProxy('Junio Souza', 'roxo');
 
   //#endregion
 

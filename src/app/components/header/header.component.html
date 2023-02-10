@@ -11,7 +11,8 @@
     <div class="header--actions--notifications">
       <ion-icon name="notifications" (click)="onDevelopment()"></ion-icon>
       <div class="header--actions--notifications--circle">
-        <ion-icon name="ion-record"></ion-icon>
+        <ion-icon name="ellipse"></ion-icon>
+
       </div>
     </div>
 
@@ -22,11 +23,11 @@
         <ion-img src="assets/profile/profile.png" (click)="onDevelopment()"></ion-img>
       </div>
       <div class="header--container--informations--info">
-        <span class="header--container--informations--info--name">{{user?.name}}</span>
-        <span [ngClass]="{'purple' : user?.level?.includes('roxo'),
-                          'yellow' : user?.level?.includes('amarelo'),
-                          'white' : user?.level?.includes('branco')}">
-                          Nível {{user?.level}}</span>
+        <span class="header--container--informations--info--name">{{user.name}}</span>
+        <span [ngClass]="{'purple' : user.level.includes('roxo'),
+                          'yellow' : user.level.includes('amarelo'),
+                          'white' : user.level.includes('branco')}">
+                          Nível {{user.level}}</span>
       </div>
     </div>
   </div>

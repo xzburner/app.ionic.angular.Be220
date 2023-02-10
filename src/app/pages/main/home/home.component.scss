@@ -37,7 +37,7 @@
     overflow-x: auto;
     position: relative;
 
-    ion-card {
+    &--new {
       border-radius: 1.2rem;
       display: flex;
       justify-content: center;
@@ -45,6 +45,18 @@
       min-width: 15rem;
       width: 15rem;
       cursor: pointer;
+      border: 1px solid #c4bfbf;
+    }
+
+    &--card-content {
+      border-radius: 1.2rem;
+      display: flex;
+      justify-content: center;
+      align-items: end;
+      min-width: 15rem;
+      width: 15rem;
+      cursor: pointer;
+      border: 1px solid #c4bfbf;
     }
 
     &--image {
@@ -76,10 +88,10 @@
     }
 
     &--text-card {
-      margin-top: 7rem;
       position: absolute;
       color: var(--color-white);
       font-size: 1.2rem;
+      padding: 0.8rem;
 
       &--continue {
         display: flex;

@@ -5,7 +5,7 @@
   </div>
 
   <div class="home--card">
-    <ion-card>
+    <ion-card class="home--card--new">
       <div class="home--card--image">
         <ion-img (click)="onDevelopment()" src="assets/cards/levantamento-de-peso.jpg"></ion-img>
       </div>
@@ -17,7 +17,7 @@
       </div>
     </ion-card>
 
-    <ion-card *ngFor="let personal of personalData" (click)="onDevelopment()">
+    <ion-card class="home--card--card-content" *ngFor="let personal of personalData" (click)="onDevelopment()">
       <div class="home--card--image">
         <ion-img src="{{personal.img}}"></ion-img>
       </div>
@@ -33,7 +33,7 @@
   </div>
 
   <div class="home--card" (click)="onDevelopment()">
-    <ion-card *ngFor="let program of programData">
+    <ion-card class="home--card--card-content" *ngFor="let program of programData">
       <div class="home--card--image">
         <ion-img src="{{program.img}}"></ion-img>
       </div>
@@ -50,7 +50,7 @@
   </div>
 
   <div class="home--card" (click)="onDevelopment()">
-    <ion-card *ngFor="let content of contentData">
+    <ion-card class="home--card--card-content" *ngFor="let content of contentData">
       <div class="home--card--image">
         <ion-img src="{{content.img}}"></ion-img>
       </div>

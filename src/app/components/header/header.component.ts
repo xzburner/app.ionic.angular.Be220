@@ -12,6 +12,8 @@ export class HeaderComponent implements OnInit {
   //#region constructor
 
   constructor(private readonly alertController: AlertController) {
+    if(!this.user)
+      return;
 
   }
 
